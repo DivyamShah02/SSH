@@ -2,6 +2,9 @@ body {
     font-family: 'Roboto', 'Nunito', sans-serif;
     padding-bottom: 60px; /* Space for the fixed bottom bar */
 }
+.blur {
+    filter: blur(5px);
+}
 .section{
     margin-top: 55px !important;
     margin-bottom: 55px !important;
@@ -40,6 +43,33 @@ body {
     font-size: 0.875rem;
     border-radius: 5px;
 }
+/* Style for the golden badge */
+.golden-badge {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background-color: gold;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.ssc-images.primary-images {
+    position: relative; /* Required for absolute positioning of the badge */
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
 .secondary-images-one img {
     border-top-right-radius: 15px;
 }
@@ -72,8 +102,8 @@ body {
 }
 .fixed-bottom-bar .bar-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 .fixed-bottom-bar h5, .fixed-bottom-bar p {
     margin: 0;
@@ -265,4 +295,21 @@ body {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+}
+
+.container.section {
+    margin-top: 70px !important;
+}
+
+.meta-label {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+@media (max-width: 767px) {
+    .justify-content-md-start,
+    .justify-content-md-center,
+    .justify-content-md-end {
+        justify-content: flex-start !important;
+    }
 }
