@@ -265,8 +265,8 @@ body {
 .left-menu {
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 300px;
+    left: -400px;
+    width: 400px;
     height: 100%;
     background-color: #f8f9fa;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -313,3 +313,72 @@ body {
         justify-content: flex-start !important;
     }
 }
+
+
+.floor-plan-btn{
+display: inline-block;
+font-size: 16px;
+font-weight: 700;
+color: #b2b2b2;
+text-transform: uppercase;
+padding: 18px 61px;
+position: relative;
+border-top: 1px solid #ebebeb;
+border-left: 1px solid #ebebeb;
+border-bottom: 1px solid #ebebeb;
+}
+
+
+.floor-plan-btn:hover{
+    color: #000;
+}
+
+.map-one{
+	position: relative;
+}
+
+.map-one_map iframe{
+	position: relative;
+	height: 500px;
+	width: 100%;
+	border-radius: 8px !important;
+    border: 2px solid black !important;
+}
+    
+.modal-dialog.custom-size {
+    max-width: 90vw; /* Adjust width as needed */
+    max-height: 90vh; /* Adjust height as needed */
+}
+
+.modal-body {
+    padding: 0; /* Remove padding around the image */
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
+}
+
+.pricing-section {
+    padding: 2rem;
+}
+
+.pricing-item {
+    margin-bottom: 1rem;
+}
+
+.pricing-item .price {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.total-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #6c757d;
+    --bs-tooltip-color: #fff;
+  }
